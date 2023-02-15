@@ -12,8 +12,8 @@ body {
 header {
   background-color: #d2b48c;
   color: #8c3826;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h1 {
@@ -21,7 +21,13 @@ h1 {
   background-color: #d2b48c;
   color: #8c3826;
   text-align: center;
-  margin-bottom: 0;
+
+  margin: auto;
+}
+
+nav {
+  background-color: #d2b48c45;
+  width: 100%;
 }
 
 h2 {
@@ -46,13 +52,19 @@ dt {
   margin-bottom: 0.2cm;
 }
 
+a {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 a,
 a:visited {
   color: #8c3826;
   text-decoration: none;
 }
+
 a:hover {
-  color: rgba(8, 0, 255, 0.738);
+  color: #521d12;
 }
 
 footer {
@@ -66,12 +78,12 @@ footer {
   border-top: 2px solid #8c3826;
 }
 
-.page {
-  background-color: #fefaeb;
-  margin: 65px;
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4);
+img {
+  padding: 10px 10px 10px 10px;
+  border-radius: 150px;
 }
 
+/*   ID's   */
 #wrapper {
   padding: 0px 35px 0px;
   display: flex;
@@ -81,6 +93,14 @@ footer {
   min-width: 900px;
   max-width: 1280px;
   filter: drop-shadow(0 0 0.7rem rgba(0, 0, 0, 0.4));
+}
+
+/*   CLASSES   */
+
+.page {
+  background-color: #fefaeb;
+  margin: 65px;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .menu {
@@ -97,11 +117,7 @@ footer {
   font-weight: bold;
   padding-top: 5px;
   padding-bottom: 5px;
-  margin: 10px;
-}
-
-a:hover {
-  color: #521d12;
+  margin-bottom: 30px;
 }
 
 .menuimage {
@@ -131,8 +147,4 @@ a:hover {
 
 .details {
   padding: 0 20%;
-}
-
-img {
-  padding: 10px 10px 10px 10px;
 }
