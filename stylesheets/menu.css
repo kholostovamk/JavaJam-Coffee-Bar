@@ -20,9 +20,13 @@ h1 {
   font-size: 3em;
   background-color: #d2b48c;
   color: #8c3826;
-  text-align: center;
-
-  margin: auto;
+  writing-mode: vertical-rl;
+  width: 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  transform: rotate(180deg);
 }
 
 nav {
@@ -72,23 +76,23 @@ footer {
   background-color: #d2b48c;
   font-style: italic;
   font-size: 0.6em;
-  margin-top: 2em;
   text-align: center;
   padding: 1em;
   border-top: 2px solid #8c3826;
 }
 
 img {
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
+  margin-right: 50px;
   border-radius: 150px;
 }
 
 /*   ID's   */
 #wrapper {
   display: flex;
-  margin: 0px;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row-reverse;
+
+  align-items: baseline;
   min-width: 900px;
   max-width: 1280px;
   filter: drop-shadow(0 0 0.7rem rgba(0, 0, 0, 0.4));
@@ -106,7 +110,8 @@ img {
 }
 
 .menu {
-  padding-right: 0.9cm;
+  margin: auto;
+  padding: 10px;
 }
 
 .description {
@@ -117,10 +122,9 @@ img {
   font-size: 1.5em;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  height: 825px;
+  height: 850px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,32 +132,19 @@ img {
 
 .menuimage {
   width: 100%;
-  height: auto;
+  height: 50%;
   max-width: 750px;
   display: block;
 }
-.homeimage {
-  width: 40%;
-  height: auto;
-  overflow: hidden;
-}
-.homepageimagewrapper {
-  background-image: url("../images/windedroad.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-}
 
 .menuimagewrapper {
-  width: auto;
+  width: 600px;
   display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 20px;
 }
 
-.details {
-  padding: 0 20%;
-}
 * {
   box-sizing: border-box;
 }
